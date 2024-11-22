@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
+    <title>EnerGym</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <img class="logo" src="./icons/logo.png" alt="EnerGym">
+            <ul class="menu">
+                <li class="menu__item">
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="sustentabilidade.html">Sustentabilidade</a>
+                </li>
+                <li>
+                    <a href="equipamentos.html">Equipamentos</a>
+                </li>
+                <li>
+                    <a href="planos.html">Planos</a>
+                </li>
+                <li>
+                    <a href="login.html">Login</a>
+                </li>
+            </ul>
+            <img class="icon" src="./icons/menu.png" alt="menu-hamburguer" id="menu-toggle">
+        </nav>
+    </header>
+    
+
+    <div class="menu-lateral" id="menu-lateral">
+        <button class="close-btn" id="close-btn">&times;</button>
+        <ul>
+            <li><a href="index.html"><i class="bx bx-home"></i> Home</a></li>
+            <li><a href="sustentabilidade.html"><i class="bx bx-leaf"></i> Sustentabilidade</a></li>
+            <li><a href="equipamentos.html"><i class="bx bx-cycling"></i> Equipamentos</a></li>
+            <li><a href="planos.html"><i class="bx bx-credit-card"></i> Planos</a></li>
+            <li><a href="login.html"><i class="bx bx-user color-green"></i> Login</a></li>
+        </ul>
+    </div>
+
+<main>
+    <section class="image-container">
+        <img class="img_principal"  src="./images/img_sustentabilidade.jpg" alt="img_principal">
+        <div class="text-container">
+            <h2>Sustentabilidade</h2>
+        </div>
+    </section>
+
+    <section class="titulo_principal">
+        <h3>Energia para um Futuro Sustentável</h3>
+        <h4>O Contexto Atual da Energia e Sustentabilidade</h4>
+        <p>A busca por fontes de energia sustentáveis está mais urgente do que nunca. Com o aquecimento global sendo impulsionado pelo uso massivo de combustíveis fósseis, o mundo enfrenta desafios crescentes, como desastres naturais, elevação do nível do mar e desigualdade no acesso à energia. Segundo o Painel Intergovernamental sobre Mudanças Climáticas (IPCC), a necessidade de ações imediatas para mitigar esses impactos é evidente.
+            No Brasil, a transição energética está progredindo com a previsão de que mais de 50% da energia gerada até 2028 venha de fontes renováveis. Contudo, o país também enfrenta desafios, como a conscientização pública e a implementação de tecnologias inovadoras para democratizar o acesso à energia.</p>
+    </section>
+
+    <section class="energy-section">
+        <h2>Consumo Energético do Brasil</h2>
+        <div class="chart-container">
+            <canvas id="energyChart"></canvas>
+        </div>
+    </section>
+
+    <section class="performance-energy-section">
+        <h3>A Energia Gerada por Atletas Amadores</h3>
+        <p>O Rio de Janeiro iniciou um projeto inovador que usa a energia gerada por equipamentos de academia, como bicicletas e esteiras, para alimentar sistemas elétricos, reduzindo o consumo de energia tradicional e promovendo a sustentabilidade. Em 2024, o preço médio de 1 kWh é de R$ 0,69. Projetos como este podem ajudar a reduzir custos com energia e conscientizar a população sobre práticas sustentáveis.</p>
+        <p>Abaixo, mostramos um modelo de energia gerada em um treino de 30 minutos, com consumo de 1 kWh.</p>
+        <h4>Desempenho Energético</h4>
+        <div class="progress-bar-container">
+            <label for="energyProgress">Progresso da Energia Gerada (kWh)</label>
+            <progress id="energyProgress" value="10" max="100"></progress>
+            <div id="energyValues">
+                <p>Tempo Treinado: 30 minutos</p>
+                <p>Energia Gerada: 0.1 kWh</p>
+                <p>Energia Consumida: 0.1 kWh</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="time-energy-section">
+        <div class="card" id="energyGenerated">
+            <h3>Energia Gerada</h3>
+            <p>0.1 kWh</p>
+        </div>
+        <div class="card" id="energyConsumed">
+            <h3>Energia Consumida</h3>
+            <p>0.1 kWh</p>
+        </div>
+    </section> 
+
+    <section class="titulo_principal">
+        <h3>A Relação Entre Treino e Sustentabilidade</h3>
+        <p>Pesquisas realizadas por instituições como o IFSP destacam a necessidade de iniciativas que aliem hábitos saudáveis, como a prática de exercícios físicos, à produção de energia limpa. A EnerGym busca integrar essa prática à sua rotina para economizar dinheiro e contribuir com o meio ambiente.</p>
+        <p>Segue um Documentário abaixo sobre energia renováavel e o grande potencial energético brasileiro:</p>
+        <video width="640" height="360" controls>
+            <source src="./video/Documentário _ A Energia do Futuro.mp4" type="video/mp4">
+            Seu navegador não suporta a tag de vídeo.
+          </video>
+          
+    </section>
+
+
+</main> 
+
+<section class="footer">
+    <div class="contatos">
+        <h3>Contatos</h3>
+        <img src="./icons/logo.png" alt="logo">
+        <p>Rua Santa Cruz, N° 465 - Vila Mariana - São Paulo - CEP 04202-000</p>
+        <div class="plataformas">
+            <img src="./icons/linkedin.png" alt="linkedin">
+            <img src="./icons/whatsapp.png" alt="whatsapp">
+            <img src="./icons/youtube.png" alt="youtube">
+            <img src="./icons/instagram.png" alt="instagram">
+            <img src="./icons/facebook.png" alt="facebook">
+        </div>
+    </div>
+    <div class="infos">
+        <div class="info_geral">
+            <div class="academia">
+                <h3>A Academia</h3>
+                <a href="index.html">Sobre nós</a>
+                <a href="sustentabilidade.html">Sustentabilidade</a>
+                <a href="planos.html">Planos</a>
+            </div>
+            <div class="solucoes">
+                <h3>Soluções</h3>
+                <a href="index.html">Home</a>
+                <a href="equipamentos.html">Equipamentos</a>
+            </div>
+            <div class="conteudo">
+                <h3>Conteúdo</h3>
+                <a href="login.html">Login</a>
+            </div>
+        </div>
+        <div class="direitos">
+            <p>Venha fazer parte desse ecossistema tecnológico e sustentável com a EnerGym! EnerGym todos os direitos reservados | <img src="./icons/direitos.png" alt="direitos"> 2024</p>
+        </div>
+    </div>
+</section>
+
+<script src="./js/sustentabilidade.js" defer></script>
+<script src="./js/menu.js" defer></script>
+
+</body>
+</html>

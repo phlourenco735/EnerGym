@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+   
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
+    <title>EnerGym</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <img class="logo" src="./icons/logo.png" alt="EnerGym">
+            <ul class="menu">
+                <li class="menu__item"><a href="index.html">Home</a></li>
+                <li><a href="sustentabilidade.html">Sustentabilidade</a></li>
+                <li><a href="equipamentos.html">Equipamentos</a></li>
+                <li><a href="planos.html">Planos</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+            <img class="icon" src="./icons/menu.png" alt="menu-hamburguer" id="menu-toggle">
+        </nav>
+    </header>
+
+    <div class="menu-lateral" id="menu-lateral">
+        <button class="close-btn" id="close-btn">&times;</button>
+        <ul>
+            <li><a href="index.html"><i class="bx bx-home"></i> Home</a></li>
+            <li><a href="sustentabilidade.html"><i class="bx bx-leaf"></i> Sustentabilidade</a></li>
+            <li><a href="equipamentos.html"><i class="bx bx-cycling"></i> Equipamentos</a></li>
+            <li><a href="planos.html"><i class="bx bx-credit-card"></i> Planos</a></li>
+            <li><a href="login.html"><i class="bx bx-user color-green"></i> Login</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <section class="container">
+            <div class="img_home">
+                <img src="./images/img_home.jpeg" alt="Esteira">
+            </div>
+            <div class="title_home">
+                <h1>Converta a sua Energia em Eletricidade e ajude o Planeta!</h1>
+            </div>
+        </section>
+
+        <section class="info">
+            <h3>Seu exercício faz a Diferença!</h3>
+            <p>Cada passo na esteira ou pedalada na bike não apenas melhora a sua saúde, mas também gera energia limpa e renovável. Graças à nossa tecnologia de conversão de energia cinética em energia elétrica, o movimento da sua corrida ou pedalada é transformado em eletricidade que pode alimentar a própria academia, economizando nos gastos energéticos, reduz os custos de energia e luz, podendo até ser utilizada essa energia para outros fins sustentáveis.</p>
+        </section>
+
+        <section class="sobre_nos">
+            <h3>Sobre nós</h3>
+            <div class="mvv">
+                <div class="mvv__mission">
+                    <h4>Missão</h4>
+                    <img src="./icons/missao.png" alt="missao">
+                    <p>Promover saúde e bem-estar, transformando o esforço físico em energia limpa e renovável, utilizada para beneficiar nossas operações e contribuir para um planeta mais sustentável, enquanto fortalecemos a saúde dos nossos usuários.</p>
+                </div>
+                <div class="mvv__value">
+                    <h4>Valores</h4>
+                    <img src="./icons/valores.png" alt="valores">
+                    <p>Sustentabilidade, saúde e bem-estar, inovação e comunidade são os valores que norteiam nossa atuação. Buscamos promover o uso de energia renovável, priorizar a qualidade de vida dos nossos usuários, desenvolver tecnologias que convertem esforço físico em soluções energéticas sustentáveis e criar um ambiente de colaboração e conscientização coletiva.</p>
+                </div>
+                <div class="mvv__vision">
+                    <h4>Visão</h4>
+                    <img src="./icons/visao.png" alt="visao">
+                    <p>Ser referência global em academias sustentáveis, inspirando indivíduos e empresas a adotarem práticas que integrem saúde, tecnologia e sustentabilidade, utilizando energia renovável como parte essencial de nossas operações.</p>
+                </div>
+            </div>  
+        </section>
+
+        <section class="proposta">
+            <h3>Venha fazer parte!</h3>
+            <div class="proposta__main">
+                <div class="proposta__text">
+                    <p>Nossa proposta é transformar a energia gerada pelos usuários durante exercícios em equipamentos aeróbicos, como esteiras e bicicletas, em energia renovável. Através dessa tecnologia, o esforço físico é convertido em eletricidade limpa, contribuindo para a sustentabilidade da academia e do meio ambiente.</p>
+                    <button class="btn" onclick="redirectSustentabilidade()">Saiba Mais</button>
+                </div>
+                <div>
+                    <img src="./images/img_home2.jpg" alt="image">
+                </div>
+            </div>
+        </section>
+    </main> 
+
+    <section class="footer">
+        <div class="contatos">
+            <h3>Contatos</h3>
+            <img src="./icons/logo.png" alt="logo">
+            <p>Rua Santa Cruz, N° 465 - Vila Mariana - São Paulo - CEP 04202-000</p>
+            <div class="plataformas">
+                <img src="./icons/linkedin.png" alt="linkedin">
+                <img src="./icons/whatsapp.png" alt="whatsapp">
+                <img src="./icons/youtube.png" alt="youtube">
+                <img src="./icons/instagram.png" alt="instagram">
+                <img src="./icons/facebook.png" alt="facebook">
+            </div>
+        </div>
+        <div class="infos">
+            <div class="info_geral">
+                <div class="academia">
+                    <h3>A Academia</h3>
+                    <a href="index.html">Sobre nós</a>
+                    <a href="sustentabilidade.html">Sustentabilidade</a>
+                    <a href="planos.html">Planos</a>
+                </div>
+                <div class="solucoes">
+                    <h3>Soluções</h3>
+                    <a href="index.html">Home</a>
+                    <a href="equipamentos.html">Equipamentos</a>
+                </div>
+                <div class="conteudo">
+                    <h3>Conteúdo</h3>
+                    <a href="login.html">Login</a>
+                </div>
+            </div>
+            <div class="direitos">
+                <p>Venha fazer parte desse ecossistema tecnológico e sustentável com a EnerGym! EnerGym todos os direitos reservados | <img src="./icons/direitos.png" alt="direitos"> 2024</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="./js/menu.js" defer></script>
+    <script src="./js/home.js" defer></script>
+</body>
+</html>
+

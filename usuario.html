@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+   
+    
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
+    <title>EnerGym</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <img class="logo" src="./icons/logo.png" alt="EnerGym">
+            <ul class="menu">
+                <li class="menu__item"><a href="index.html">Home</a></li>
+                <li><a href="sustentabilidade.html">Sustentabilidade</a></li>
+                <li><a href="equipamentos.html">Equipamentos</a></li>
+                <li><a href="planos.html">Planos</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+            <img class="icon" src="./icons/menu.png" alt="menu-hamburguer" id="menu-toggle">
+        </nav>
+    </header>
+
+    <div class="menu-lateral" id="menu-lateral">
+        <button class="close-btn" id="close-btn">&times;</button>
+        <ul>
+            <li><a href="index.html"><i class="bx bx-home"></i> Home</a></li>
+            <li><a href="sustentabilidade.html"><i class="bx bx-leaf"></i> Sustentabilidade</a></li>
+            <li><a href="equipamentos.html"><i class="bx bx-cycling"></i> Equipamentos</a></li>
+            <li><a href="planos.html"><i class="bx bx-credit-card"></i> Planos</a></li>
+            <li><a href="login.html"><i class="bx bx-user color-green"></i> Login</a></li>
+        </ul>
+    </div>
+
+    <main>
+    <section class="image-container">
+        <img class="img_principal"  src="./images/perfil_usuario.jpg" alt="img_principal">
+        <div class="text-container">
+            <h2>Perfil Usuário</h2>
+        </div>   
+    </section>
+
+    <section class="user">
+        <div class="title_users">
+            <h3>Dados do treino</h3>
+        </div>
+        <div class="dados_user">
+            <h4>Dados do Usuário</h4>
+            <div class="peso_altura">
+                <label for="peso">Peso (kg):</label>
+                <input  class="value" type="number" placeholder="51">
+            </div>
+            <div class="peso_altura">
+                <label for="peso">Altura (m):</label>
+                <input class="value" type="number" placeholder="1.69">
+            </div>
+        </div>
+    </section>
+
+    <section class="dados_treino">
+        <div class="info_treino">
+            
+            <div class="value_treino">
+                <p>Modalidades</p>
+                <div class="principal">
+                    <div class="conteudos_img">
+                        <img src="./images/bike.png" alt="bike">
+                        <p>Bike</p>
+                    </div>
+                    <div class="conteudos_img">
+                        <img src="./images/esteira.png" alt="esteira">
+                        <p>Esteira</p>
+                    </div>
+                </div>
+            </div>
+    
+         
+            <div class="value_treino">
+                <p>Período/tempo</p>
+                <div class="principal">
+                    <div class="conteudos">
+                        <input class="value" type="number" placeholder="30">
+                    </div>
+                    <div class="conteudos">
+                        <p>minutos</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="value_treino">
+                <p>Data/tempo</p>
+                <div class="principal">
+                    <div class="conteudos">
+                        <input class="value" type="number" placeholder="21">
+                    </div>
+                    <div class="conteudos">
+                        <p>dia</p>
+                    </div>
+                </div>
+                <div class="principal">
+                    <div class="conteudos">
+                        <input class="value" type="month" placeholder="Fev">
+                    </div>
+                    <div class="conteudos">
+                        <p>mês</p>
+                    </div>
+                </div>
+                <div class="principal">
+                    <div class="conteudos">
+                        <input class="value" type="year" placeholder="2024">
+                    </div>
+                    <div class="conteudos">
+                        <p>ano</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="value_treino">
+                <p>Distância/percurso</p>
+                <div class="principal">
+                    <div class="conteudos">
+                        <input class="value" type="number" placeholder="5">
+                    </div>
+                    <div class="conteudos">
+                        <p>metros</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="info_treino">
+           
+            <div class="value_treino">
+                <p>Potência mecânica</p>
+                <div class="principal">
+                    <div class="conteudos">
+                        <img src="./images/esteira.png" alt="esteira">
+                        <p>Esteira</p>
+                    </div>
+                </div>
+            </div>
+    
+            
+            <div class="value_treino">
+                <p>Força gerada</p>
+                <div class="principal">
+                    <div class="conteudos">
+                        <p>00</p>
+                    </div>
+                    <div class="conteudos">
+                        <p>N</p>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="value_treino">
+                <p>Potência mecânica</p>
+                <div class="principal">
+                    <div class="conteudos">
+                        <p>00</p>
+                    </div>
+                    <div class="conteudos">
+                        <p>W</p>
+                    </div>
+                </div>
+            </div>
+
+             <div class="value_treino">
+                <p>Potência elétrica</p>
+                <div class="principal">
+                    <div class="conteudos">
+                        <p>00</p>
+                    </div>
+                    <div class="conteudos">
+                        <p>W</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="value_treino">
+                <p>Energia elétrica gerada</p>
+                <div class="principal">
+                    <div class="conteudos">
+                        <p>00</p>
+                    </div>
+                    <div class="conteudos">
+                        <p>Wh</p>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+
+        <div class="info_treino">
+           
+            <div class="value_treino">
+                <p>Potência mecânica</p>
+                <div class="principal">
+                    <div class="conteudos">
+                        <img src="./images/bike.png" alt="esteira">
+                        <p>Bike</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="value_treino">
+                <p>Força gerada</p>
+                <div class="principal">
+                    <div class="conteudos">
+                        <p>00</p>
+                    </div>
+                    <div class="conteudos">
+                        <p>N</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="value_treino">
+                <p>Potência mecânica</p>
+                <div class="principal">
+                    <div class="conteudos">
+                        <p>00</p>
+                    </div>
+                    <div class="conteudos">
+                        <p>W</p>
+                    </div>
+                </div>
+            </div>
+
+             <div class="value_treino">
+                <p>Potência elétrica</p>
+                <div class="principal">
+                    <div class="conteudos">
+                        <p>00</p>
+                    </div>
+                    <div class="conteudos">
+                        <p>W</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="value_treino">
+                <p>Energia elétrica gerada</p>
+                <div class="principal">
+                    <div class="conteudos">
+                        <p>00</p>
+                    </div>
+                    <div class="conteudos">
+                        <p>Wh</p>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+
+    </section>
+    </main>
+
+    <section class="footer">
+        <div class="contatos">
+            <h3>Contatos</h3>
+            <img src="./icons/logo.png" alt="logo">
+            <p>Rua Santa Cruz, N° 465 - Vila Mariana - São Paulo - CEP 04202-000</p>
+            <div class="plataformas">
+                <img src="./icons/linkedin.png" alt="linkedin">
+                <img src="./icons/whatsapp.png" alt="whatsapp">
+                <img src="./icons/youtube.png" alt="youtube">
+                <img src="./icons/instagram.png" alt="instagram">
+                <img src="./icons/facebook.png" alt="facebook">
+            </div>
+        </div>
+        <div class="infos">
+            <div class="info_geral">
+                <div class="academia">
+                    <h3>A Academia</h3>
+                    <a href="index.html">Sobre nós</a>
+                    <a href="sustentabilidade.html">Sustentabilidade</a>
+                    <a href="planos.html">Planos</a>
+                </div>
+                <div class="solucoes">
+                    <h3>Soluções</h3>
+                    <a href="index.html">Home</a>
+                    <a href="equipamentos.html">Equipamentos</a>
+                </div>
+                <div class="conteudo">
+                    <h3>Conteúdo</h3>
+                    <a href="login.html">Login</a>
+                </div>
+            </div>
+            <div class="direitos">
+                <p>Venha fazer parte desse ecossistema tecnológico e sustentável com a EnerGym! EnerGym todos os direitos reservados | <img src="./icons/direitos.png" alt="direitos"> 2024</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="./js/menu.js" defer></script>
+    <script src="./js/home.js" defer></script>
+</body>
+</html>
+

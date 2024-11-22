@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+    <title>EnerGym - Equipamentos</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <img class="logo" src="./icons/logo.png" alt="EnerGym">
+            <ul class="menu">
+                <li class="menu__item">
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="sustentabilidade.html">Sustentabilidade</a>
+                </li>
+                <li>
+                    <a href="equipamentos.html">Equipamentos</a>
+                </li>
+                <li>
+                    <a href="planos.html">Planos</a>
+                </li>
+                <li>
+                    <a href="login.html">Login</a>
+                </li>
+            </ul>
+            <img class="icon" src="./icons/menu.png" alt="menu-hamburguer" id="menu-toggle">
+        </nav>
+    </header>
+    
+    <div class="menu-lateral" id="menu-lateral">
+        <button class="close-btn" id="close-btn">&times;</button>
+        <ul>
+            <li><a href="index.html"><i class="bx bx-home"></i> Home</a></li>
+            <li><a href="sustentabilidade.html"><i class="bx bx-leaf"></i> Sustentabilidade</a></li>
+            <li><a href="equipamentos.html"><i class="bx bx-cycling"></i> Equipamentos</a></li>
+            <li><a href="planos.html"><i class="bx bx-credit-card"></i> Planos</a></li>
+            <li><a href="login.html"><i class="bx bx-user color-green"></i> Login</a></li>
+        </ul>
+    </div>
+
+<main>
+    <section class="image-container">
+        <img class="img_principal" src="./images/img_home.jpeg" alt="img_principal">
+        <div class="text-container">
+            <h2>Equipamentos</h2>
+        </div>
+    </section>
+
+    <section class="info_equip">
+        <div class="equip">
+            <div class="img__bike">
+                <img src="./images/img_equipamentos1.jpg" alt="bike">
+            </div>
+            <div class="text__bike">
+                <h4>Bicicleta</h4>
+                <p>Na bicicleta, o pedalar gera energia cinética rotacional nos pedais e na roda.</p>
+                <p>O movimento é transferido para um gerador elétrico acoplado que pode ser conectado ao eixo da roda.</p>
+                <p>O gerador transforma a energia cinética do movimento em energia elétrica, que pode ser armazenada (em baterias) ou utilizada imediatamente.</p>
+            </div>
+        </div>
+        <div class="equip">
+            <div class="img__esteira">
+                <img class="img___esteira" src="./images/img_equipamentos2.jpg" alt="bike">
+            </div>
+            <div class="text_equip">
+                <h4>Esteira</h4>
+                <p>Na esteira, o movimento da lona enquanto o usuário corre ou caminha gera energia cinética linear.</p>
+                <p>O movimento é transferido para um gerador elétrico acoplado que pode estar conectado ao rolo que movimenta a lona.</p>
+                <p>O gerador transforma a energia cinética do movimento em energia elétrica, que pode ser armazenada (em baterias) ou utilizada imediatamente.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="calculos">
+        <h3>Cálculo de energia</h3>
+        <div class="calculo">
+            <div class="text_calculo">
+                <h4>Potência Mecânica Produzida pelo Usuário</h4>
+                <p>Onde</p>
+                <ul>
+                    <li>Pm: Potência mecânica (em watts, W);</li>
+                    <li>F: Força aplicada pelo usuário (em newtons, N);</li>
+                    <li>v: Velocidade do movimento (em metros por segundo, m/s)</li>
+                </ul>
+            </div>
+            <div class="formula">
+                <p>A potência mecânica (Pm) pode ser calculada com</p>
+                <p class="f">Pm = F  x  v</p>
+            </div>
+        </div>
+        <div class="calculo">
+            <div class="text_calculo">
+                <h4>Eficiência do Sistema:</h4>
+                <p>Onde</p>
+                <ul>
+                    <li>Pe: Potência elétrica gerada (em watts, W);</li>
+                    <li>η: Eficiência do sistema (em porcentagem, geralmente entre 50% e 90%).</li>
+                </ul>
+            </div>
+            <div class="formula">
+                <p>Nem toda a energia mecânica será convertida em elétrica devido a perdas no gerador e no sistema. A eficiência (η) do sistema deve ser considerada:</p>
+                <p class="f">Pe = Pm  x  η</p>
+            </div>
+        </div>
+        <div class="calculo">
+            <div class="text_calculo">
+                <h4>Energia Total Gerada em um Período:</h4>
+                <p>Onde</p>
+                <ul>
+                    <li>E: Energia gerada (em joules ou watt-horas, Wh);</li>
+                    <li>t: Tempo de uso do equipamento (em horas, h).</li>
+                </ul>
+            </div>
+            <div class="formula">
+                <p>A energia elétrica gerada em um tempo (t) é:</p>
+                <p class="f">E= Pe  x  t</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="execute">
+        <div class="exes">
+            <div class="exe">
+                <div class="executando__calculo">
+                    <h4>Bicicleta Ergométrica</h4>
+                    <img src="./images/img_equipamentos3.jpg" alt="bike">
+                </div>
+                <div class="onde">
+                    <p>Onde</p>
+                    <ul>
+                        <li>Força média aplicada nos pedais: F=150 N;</li>
+                        <li>Velocidade média de rotação da roda: v=3 m/s</li>
+                        <li>Eficiência do sistema: η=70% ou 0,7;</li>
+                        <li>Tempo de uso: t=1 h.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="realize">
+                <div>
+                    <p>Pm = 150  x  3</p>
+                </div>
+                <div>
+                    <p>Pe = 450  x  0,7</p>
+                </div>
+                <div>
+                    <p>E= 315  x  1</p>
+                </div>
+                <div>
+                    <p>E= 315Wh</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="exes">
+            <div class="exe">
+                <div class="executando__calculo">
+                    <h4>Esteira</h4>
+                    <img src="./images/img_equipamentos4.jpg" alt="esteira">
+                </div>
+                <div class="onde">
+                    <p>Onde</p>
+                    <ul>
+                        <li>Força média aplicada nos pedais: F=700 N;</li>
+                        <li>Velocidade média da lona: v=2 m/s;</li>
+                        <li>Eficiência do sistema: η=60% ou 0,6;</li>
+                        <li>Tempo de uso: t=30 min= 0,5h.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="realize">
+                <p>Pm = 700  x  2</p>
+                <p>Pe = 1400  x  0,6</p>
+                <p>E= 840  x  0,5</p>
+                <p>E= 420Wh</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<section class="footer">
+    <div class="contatos">
+        <h3>Contatos</h3>
+        <img src="./icons/logo.png" alt="logo">
+        <p>Rua Santa Cruz, N° 465 - Vila Mariana - São Paulo - CEP 04202-000</p>
+        <div class="plataformas">
+            <img src="./icons/linkedin.png" alt="linkedin">
+            <img src="./icons/whatsapp.png" alt="whatsapp">
+            <img src="./icons/youtube.png" alt="youtube">
+            <img src="./icons/instagram.png" alt="instagram">
+            <img src="./icons/facebook.png" alt="facebook">
+        </div>
+    </div>
+    <div class="infos">
+        <div class="info_geral">
+            <div class="academia">
+                <h3>A Academia</h3>
+                <a href="index.html">Sobre nós</a>
+                <a href="sustentabilidade.html">Sustentabilidade</a>
+                <a href="planos.html">Planos</a>
+            </div>
+            <div class="solucoes">
+                <h3>Soluções</h3>
+                <a href="index.html">Home</a>
+                <a href="equipamentos.html">Equipamentos</a>
+            </div>
+            <div class="conteudo">
+                <h3>Conteúdo</h3>
+                <a href="login.html">Login</a>
+            </div>
+        </div>
+        <div class="direitos">
+            <p>Venha fazer parte desse ecossistema tecnológico e sustentável com a EnerGym! EnerGym todos os direitos reservados | <img src="./icons/direitos.png" alt="direitos"> 2024</p>
+        </div>
+    </div>
+</section>
+
+  <script src="js/menu.js"></script>
+</body>
+</html>

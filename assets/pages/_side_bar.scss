@@ -1,0 +1,77 @@
+.menu-lateral {
+    position: fixed;
+    top: 0;
+    right: -17.5rem;
+    width: 17.5rem;
+    height: 100%;
+    background-color: $green;
+    color: $white;
+    box-shadow: -0.3125rem 0 0.9375rem rgba(0, 0, 0, 0.3);
+    transition: right 0.3s ease;
+    z-index: 999;
+}
+
+.menu-lateral ul {
+    padding: 0;
+    margin-top: 3.75rem;
+    list-style-type: none;
+    text-align: left;
+}
+
+.menu-lateral li {
+    padding: 1.25rem;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.menu-lateral li a {
+    color: $white;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    padding-left: 0.9375rem;
+}
+
+.menu-lateral li a:hover {
+    background-color: $green_secundary;
+    padding-left: 1.25rem;
+}
+
+.close-btn {
+    position: absolute;
+    top: 1.25rem;
+    right: 1.25rem;
+    font-size: 2rem;
+    background: transparent;
+    color: $white;
+    border: none;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: $white;
+}
+
+#menu-toggle {
+    width: 1.875rem;
+    height: 1.875rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    color: $white;
+}
+
+#menu-toggle:hover {
+    transform: rotate(90deg);
+}
+
+.menu-lateral.active {
+    right: 0;
+}
+
+.menu-lateral li .bx {
+    margin-right: 0.9375rem;
+    color: $white;
+}

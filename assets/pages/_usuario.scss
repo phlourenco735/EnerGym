@@ -1,0 +1,135 @@
+section.user {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.dados_user {
+    background-color: $green;
+    padding: 3rem;
+    border-radius: 2rem;
+    color: $white;
+}
+
+.value {
+    border-radius: 2rem;
+    padding: 0.5rem;
+    background-color: $green_terciary;
+    border-color: $green_secundary;
+
+    &::placeholder {
+        color: $green;
+        font-size: 1.2rem;
+    }
+}
+
+.peso_altura {
+    margin: 1rem;
+}
+
+.value_treino {
+    background-color: $green;
+    text-align: center;
+    align-items: center;
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: 2rem;
+
+
+    .value_treino p {
+        color: $white;
+        font-size: 1.2rem;
+        text-align: center; 
+    }
+    
+}
+
+.conteudos {
+    background-color: $green_terciary;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin: 1rem;    
+    p {
+        color: $green_four;
+        font-size: 1.2rem;
+        text-align: center;
+        margin: 0 auto; 
+    }
+
+    img {
+        width: 3rem;
+        height: 3rem;
+        transition: filter 0.3s ease; 
+    }
+
+    .value {
+        display: block; 
+        margin: 0 auto; 
+        text-align: center;
+        transition: background-color 0.3s ease, color 0.3s ease; 
+    }
+
+
+}
+
+
+.conteudos_img {
+    background-color: $green_terciary;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin: 1rem;    
+    p {
+        color: $green;
+        font-size: 1.2rem;
+        text-align: center;
+        margin: 0 auto; 
+    }
+
+    img {
+        width: 3rem;
+        height: 3rem;
+        transition: filter 0.3s ease; 
+    }
+
+    .value {
+        display: block; 
+        margin: 0 auto; 
+        text-align: center;
+        transition: background-color 0.3s ease, color 0.3s ease; 
+    }
+
+    &:hover {
+        background-color: $green_four;
+    }
+
+    
+    &:hover img {
+        filter: brightness(0) invert(1); 
+    }
+    
+    &:hover p, 
+    &:hover .value {
+        color: $white
+    }
+}
+
+
+
+.principal {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.info_treino {
+    background-color: linear-gradient(to right, #276D4A, #359364, #3CA671, #42B97E, #6AD59F);;
+    border-radius: 2rem;
+    width: 100%;
+    padding: 2rem;
+}
+
+.dados_treino{
+    display: flex;
+    justify-content: space-around;
+}
+

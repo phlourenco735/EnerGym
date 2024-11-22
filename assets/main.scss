@@ -1,0 +1,311 @@
+@import 'public/variables';
+@import 'pages/home';
+@import 'pages/login';
+@import 'pages/cadastro';
+@import 'pages/esqueceu_senha';
+@import 'pages/equipamentos';
+@import 'pages/sustentabilidade';
+@import 'pages/planos';
+@import 'pages/side_bar';
+@import 'pages/usuario';
+
+.logo{
+    object-fit: contain;
+    height: 7rem;
+    width: 5rem;
+    margin: auto;
+    margin: 0;
+}
+
+.login {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+
+    label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-weight: 500;
+        color: $black;
+    }
+
+    input {
+        width: 80%;
+        padding: 0.75rem;
+        border: 1px solid $white;
+        border-radius: 0.25rem;
+        font-size: 1rem;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+
+        &:focus {
+            outline: none;
+            border-color: $green;
+            box-shadow: 0 0 0 2px rgba(39, 109, 74, 0.2);
+        }
+    }
+}
+
+button {
+    background: $green;
+    color: $white;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background 0.3s;
+
+    &:hover {
+        background: darken($green, 10%);
+    }
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font;
+    background: linear-gradient(to right,  #276D4A, #359364, #3CA671, #42B97E, #6AD59F)
+}
+
+
+h3{
+    font-size: 2rem;
+    color: $white;
+}
+
+p{
+    line-height: 1.5rem;
+    font-size: 1rem;;
+}
+
+header{
+    background: $white;
+    padding: 0.2rem 2rem;
+    ul img{
+        width: 10rem;
+        height: 5rem;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1.6rem;
+    }
+    ul{
+        display: inline-flex;
+        gap: 2rem;
+    }
+    li{
+        list-style-type: none;
+    }
+    a{
+        text-decoration: none;
+        color: $black;
+    }
+    img {
+        &.icon { 
+            height: 3rem;
+            width: 3rem; 
+            margin: 0%;
+            padding: 0;
+        }
+    }
+    
+}
+
+section {
+    height: auto;
+    padding: 2rem;
+}
+
+section.footer{
+    background-color: $white;
+    display: flex;
+    justify-content: space-around;
+    a{
+        color: $green;
+        text-decoration: none;
+    }
+    h3{
+        color: $black;
+    }
+    .plataformas{
+        display: flex;
+        align-items: baseline;
+        img{
+            width: 3rem;
+            height: 3rem;
+            padding-right: 4.7rem;
+        }
+    }
+    .infos{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between
+    }
+    .info_geral{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .academia, .solucoes, .conteudo{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .direitos{
+        img{
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+    }
+
+    p{
+        color: $green;
+    }
+}
+
+.text-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: $white;
+        font-size: 2rem;
+        font-weight: bold;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        text-align: center;
+    }
+
+
+    body {
+        height: 100vh;
+    }
+    
+    nav.menu_lateral {
+        width: 4rem;
+        height: 100%;
+        background-color: $white;
+        box-shadow: -0.5rem 0 $green_secundary; 
+        position: fixed;
+        top: 0;
+        right: 0; 
+        overflow: hidden;
+        transition: width 0.3s ease;
+    }
+    
+    .menu_lateral.ativo {
+        width: 15rem; 
+    }
+    
+    img.icon { 
+        height: 3rem;
+        width: 3rem; 
+        margin: 0;
+        padding: 0.5rem;
+        cursor: pointer;
+    }
+    
+    ul {
+        height: 100%;
+        list-style-type: none;
+        padding: 0;
+    
+        .item-menu {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            width: 100%;
+            transition: 0.2s;
+            margin-bottom: 0.4rem;
+        }
+    
+        .item-menu:hover {
+            background-color: $green;
+    
+            a {
+                color: $white;
+            }
+    
+            i {
+                color: $white;
+            }
+        }
+    
+        .ativo {
+            background-color: $green; 
+            
+            i {
+                color: $white; 
+            }
+    
+            a {
+                color: $white; 
+            }
+        }
+    
+        a {
+            color: $green;
+            text-decoration: none;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            width: 100%;
+            padding: 0 1rem;
+            line-height: 4rem;
+    
+            i {
+                font-size: 2rem;
+                transition: color 0.2s;
+                color: $green;
+            }
+        }
+    }
+
+@media (max-width:500px) {
+    header nav{
+        .menu{
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 1100px){
+    .footer{
+        flex-wrap: wrap;
+        .contatos{
+            text-align: center;
+        }
+        .plataformas{
+            text-align: center;
+            justify-content: center;
+           }
+        }
+
+        section.footer .plataformas img{
+            padding-right: 0;
+            padding: 0 2rem;
+        }
+
+        .direitos{
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
+    }
+
+    
+
+
+    

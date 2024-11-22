@@ -1,0 +1,181 @@
+.image-container {
+    position: relative;
+    margin: 0;
+    overflow: hidden;
+
+    .img_principal {
+        width: 100%;
+        height: auto;
+        border-radius: 2rem;
+    }
+
+}
+
+section.info_equip {
+    background: $background_left;
+    display: flex;
+
+    .equip {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 3rem;
+
+        img {
+            width: 22rem;
+            height: 15rem;
+            object-fit: cover; 
+            border: 1rem solid $green;
+        }
+
+        .img___esteira{
+            width: 10rem;
+            height: 13rem;
+            object-fit: cover; 
+        }
+
+        p{
+            width: 70%;
+        }
+    }
+}
+
+section.calculos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+    .calculo {
+        width: 50%;
+        border-radius: 0.5rem;
+        background-color: $green;
+        margin: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 2rem;
+    }
+
+    .text_calculo{
+        padding-left: 5rem;
+    }
+
+    .formula {
+        padding-left: 5rem;
+        align-items: center;
+    
+        .f {
+            background-color: $white;
+            padding: 1rem;
+            color: $green;
+            display: flex;
+            justify-content: center;  
+            align-items: center;      
+            text-align: center;  
+            border-radius: 3rem;  
+            font-weight: bolder;
+            width: 30%;  
+        }
+    }
+}
+
+section.execute {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+    .exes {
+        width: 50%; 
+        display: flex;
+        flex-direction: column; 
+        background-color: $green;
+        margin-bottom: 2rem;
+        padding: 2rem;
+        border-radius: 0.5rem; 
+        
+
+        .exe {
+            display: flex;
+            justify-content:space-around;
+            width: 100%;
+            margin-bottom: 2rem;
+            align-items: center;
+
+            .executando__calculo {
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                justify-content: center;
+                width: 70%;  
+               
+
+                img {
+                    width: 100%;  
+                    max-width: 15rem;  
+                    height: auto;
+                    object-fit: cover;
+                    border-radius: 1rem;
+                }
+            }
+
+            .onde {
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                width: 50%;  
+
+                p {
+                    font-weight: bold;
+                    margin-bottom: 1rem;
+                }
+
+                ul {
+                    color: $white;
+
+                    li {
+                        margin-bottom: 0.5rem;
+                    }
+                }
+            }
+        }
+
+        .realize {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            width: 100%;
+
+            p {
+                background-color: $white;
+                color: $green;
+                width: 100%;  
+                margin: 0.5rem;
+                text-align: center;
+                width: 100%; 
+                font-weight: bolder;
+                padding: 1rem;
+                 border-radius: 3rem;
+            }
+        }
+    }
+}
+
+
+
+p{
+    width: 80%;
+    color: $white;
+}
+
+h4{
+    color: $white;
+    font-size: 1.5rem;
+}
+
+li{
+    color: $white;
+}

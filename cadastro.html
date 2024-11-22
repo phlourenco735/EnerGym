@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+    <title>Energym</title>
+</head>
+<body class="login">
+    <div class="register-container">
+        <img class="logo" src="./icons/logo.png" alt="EnerGym">
+        <form class="register-form" onsubmit="validateRegister(event)">
+            <h2>Crie sua conta</h2>
+            <div class="form-group">
+                <input type="text" id="name" name="name" placeholder="Digite seu nome completo" required>
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+            </div>
+            <div class="form-group">
+                <input type="text" id="cep" name="cep" placeholder="Digite seu CEP" required>
+            </div>
+            <div class="form-group">
+                <input type="text" id="cpf" name="cpf" placeholder="Digite seu CPF" required>
+            </div>
+            <div class="form-group">
+                <input type="float" id="altura" name="altura" placeholder="Digite sua altura em metros" required>
+            </div>
+            <div class="form-group">
+                <input type="float" id="peso" name="peso" placeholder="Digite seu peso em kg" required>
+            </div>
+            <div class="form-group">
+                <input type="password" id="password" name="password" placeholder="Crie uma senha" required>
+            </div>
+            <div class="form-group">
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirme sua senha" required>
+            </div>
+            <button type="submit">Cadastrar</button>
+            <p class="login-link">Já tem uma conta? <a href="login.html">Faça login</a></p>
+        </form>
+    </div>
+</body>
+<script src="js/cadastro.js"></script>
+</html>
