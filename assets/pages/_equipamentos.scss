@@ -179,3 +179,59 @@ h4{
 li{
     color: $white;
 }
+
+@media (max-width:1100px) {
+    section.info_equip {
+        flex-wrap: wrap;
+    }
+
+    
+
+    section.execute .exes .realize {
+        flex-wrap: wrap;
+        width: 45%;
+        padding: 1rem;
+    }
+   
+}
+
+
+@media (max-width:500px) {
+    section.info_equip .equip {
+        flex-wrap: wrap;
+        margin: 1rem;
+    }
+
+    section.info_equip .equip img {
+        width: 10rem;
+        height: 5rem;
+        -o-object-fit: cover;
+        object-fit: cover;
+        border: 0.5rem solid #276D4A;
+    }
+
+    section.calculos .calculo {
+        flex-wrap: wrap;
+        width: 100%;
+        border-radius: 0.5rem;
+        background-color: #276D4A;
+        align-items: center;
+        justify-content: space-around;
+        padding: 2rem;
+    }
+
+    section.execute {
+        padding: 3rem;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    section.execute .exes .exe {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-bottom: 2rem;
+        align-items: center;
+    }
+
+}

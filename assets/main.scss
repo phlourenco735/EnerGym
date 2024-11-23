@@ -305,6 +305,20 @@ section.footer{
         }
     }
 
+    @media (max-width: 500px){
+
+
+        section.footer .plataformas img{
+            padding-right: 0;
+            padding: 5px;
+        }
+
+        section.footer .info_geral {
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+        }
+    }
     
 
 

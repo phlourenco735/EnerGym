@@ -38,7 +38,11 @@
 }
 
 @media (max-width:500px) {
-    .login-container{
-        margin: 20px;
-    }
+   h2{
+    font-size: 1.5rem;
+   }
+
+   .titulo_principal {
+    flex-wrap: wrap;
+}
 }

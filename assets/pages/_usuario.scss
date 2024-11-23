@@ -133,3 +133,36 @@ section.user {
     justify-content: space-around;
 }
 
+@media (max-width:500px) {
+    section.user {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .dados_treino {
+        flex-wrap: wrap;
+    }
+    
+    .principal {
+    flex-wrap: wrap;
+    
+    }
+}
+
+@media (max-width:1100px) {
+    section.user {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .dados_treino {
+        flex-wrap: wrap;
+    }
+    
+    .principal {
+    flex-wrap: wrap;
+    
+    }
+}
